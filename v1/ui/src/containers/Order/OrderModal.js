@@ -22,7 +22,7 @@ const OrderModal = (props) => {
         <Modal.Body>
           {Object.keys(ingridients).map((key) => (
             <li>
-              {key} : {ingridients[key]}
+              {key.charAt(0).toUpperCase() + key.slice(1)} : {ingridients[key]}
             </li>
           ))}
           {<div className="text-center">Total Price: <span>{props.totalPrice}</span></div>}
