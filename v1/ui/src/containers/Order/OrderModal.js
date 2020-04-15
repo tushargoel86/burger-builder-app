@@ -17,7 +17,7 @@ const OrderModal = (props) => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Order Quantity</Modal.Title>
+          <Modal.Title>Order Summary</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {Object.keys(ingridients).map((key) => (
